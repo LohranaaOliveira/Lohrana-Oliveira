@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 15px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 45%;
+    background-color: rgba(255, 255, 255, 0.266);
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.prev {
+    left: 0;
+    border-radius: 45%;
+}
+
+.next {
+    right: 0;
+    border-radius: 45%;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 2;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background-color: rgba(202, 198, 198, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border: 0;
+}
+
+.logojogos1 {
+    width: 67%;
+    height: 10%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.logojogos2 {
+    width: 35%;
+    height: 10%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.logojogos3 {
+    width: 40%;
+    height: 10%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.logojogos4 {
+    width: 35%;
+    height: 10%;
+    margin-left: 0%;
+    margin-top: -1%;
+}
+
+.logojogos5 {
+    width: 50%;
+    height: 10%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.logojogos6 {
+    width: 65%;
+    margin-left: 0%;
+    margin-top: 2%;
+}
+
+.logojogos7 {
+    width: 30%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.logojogos7 {
+    width: 20%;
+    margin-left: 0%;
+    margin-top: -2%;
+}
+
+.logojogos8 {
+    width: 40%;
+    margin-left: -2%;
+    margin-top: -2%;
+    margin-bottom: -3%;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.667);
+    z-index: 2;
+}
+
+.newsletter-box {
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px #ff0f0f00;
+    z-index: 3;
+    width: 300px;
+    text-align: center;
+    pointer-events: auto;
+    visibility: hidden;
+
+}
+
+.newsletter-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-box input[type="email"] {
+    width: 500px;
+    padding: 13px;
+    border: 2px solid #ffffff;
+    background-color: #00000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    z-index: 3;
+}
+
+.newsletter-box button {
+    display: block;
+    width: 500px;
+    padding: 13px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 3;
+}
+
+.newsletter-box button:hover {
+    background-color: #000000;
+    border: 2px solid #9000ff;
+    color: #fff;
+}
+
+.overbanner {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+}
+
+.gradient-top {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0) 80%);
+}
+
+.gradient-top2 {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0) 60%);
+    z-index: 4;
+}
+
+
+.gradient-bottom {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    margin-top: 32.60%;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 60%);
+}
+
+.gradient-bottom2 {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    margin-top: 32.60%;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 40%);
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax-1 {
+    background-image: url("Personalização do site/Design sem nome.png");
+}

@@ -1,0 +1,66 @@
+h2 {
+    text-align: center;
+}
+
+.container3 {
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #9000ff;
+    background-color: #000000;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.form-group textarea {
+    height: 200px;
+
+}
+
+.form-group .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group .row .col {
+    width: 48%;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #9000ff;
+    color: white;
+    border: 2px solid #9000ff;
+    border-radius: 3px;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+    border: 2px solid #9000ff;
+    color: #fff;
+}

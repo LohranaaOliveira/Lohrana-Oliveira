@@ -1,0 +1,246 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #000000;
+  padding: 30px 40px;
+  border-radius: 30px;
+  box-shadow: 0 1px 80px #8700b9;
+  width: 100%;
+  max-width: 400px;
+  height: 645px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #000000;
+  color: #fff;
+}
+
+td, th{
+  border: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.container label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.container label::after {
+  content: '*';
+  color: red;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container input[type="date"],
+.container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #a5a5a5;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+}
+
+.container input[type="text"]:focus,
+.container input[type="email"]:focus,
+.container input[type="password"]:focus,
+.container input[type="date"]:focus,
+.container select:focus {
+  border-color: #9000ff;
+  outline: none;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input[type="password"] {
+  padding-right: 40px;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #9000ff;
+  cursor: pointer;
+}
+
+.button {
+  width: 50%;
+  padding: 10px;
+  background-color: #9000ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 25%;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #9000ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#submit{
+  background-color: #9000ff;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#submit:hover{
+  background-color: #fff;
+  color: #9000ff;
+}
+
+#update{
+  background-color: #9000ff;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#update:hover{
+  background-color: #fff;
+  color: #9000ff;
+}
+
+fieldset {
+  display: block;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    min-inline-size: min-content;
+    border-width: 0px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.privacy-policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15 px;
+}
+
+.privacy-policy input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 13px;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: #9000ff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.close-button:hover {
+  color: #9000ff;
+}
+
+
+.linkb1 {
+  font-size: 20px;
+  text-decoration: none;
+  color: #9000ff;
+  ;
+}
+
+.linkb1:hover {
+  font-size: 20px;
+  text-decoration: none;
+  color: #9000ff;
+}
+
+.linkb2 {
+  font-size: 16px;
+  text-decoration: none;
+  color: #9000ff;
+}
+
+.linkb2:hover {
+  color: #ffffffbe;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #9000ff;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #ff0000;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 10;
+}
