@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="mage/x-icon" href="Personalização do site\TopLevelLogo.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assents/css/Global.css">
+  <link rel="stylesheet" href="assents/css/Produtos.css">
+  <title>Controles</title>
+</head>
+
+<body>
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://kit.fontawesome.com/87a451ecf9.js" crossorigin="anonymous"></script>
+  <script>
+    function exibirBalaoMensagem() {
+      const balaoMensagem = document.getElementById('balao-mensagem');
+      balaoMensagem.style.display = 'block';
+
+      setTimeout(function () {
+        balaoMensagem.style.display = 'none';
+      }, 3000);
+    }
+
+
+    function toggleCategories() {
+      const categoriesDiv = document.getElementById('categories');
+      categoriesDiv.classList.toggle('collapsed');
+
+      const icon = document.querySelector('.categories-expand-btn i');
+      if (categoriesDiv.classList.contains('collapsed')) {
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+      } else {
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
+      }
+    }
+
+    function togglePrice() {
+      const priceDiv = document.getElementById('price');
+      priceDiv.classList.toggle('collapsed');
+
+      const icon = document.querySelector('.price-expand-btn i');
+      if (priceDiv.classList.contains('collapsed')) {
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+      } else {
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
+      }
+    }
+
+
+
+
+  </script>
+  <div class="header-config">
+    <a href="Index.html" class="logo"><img src="Personalização do site/TopLevelLogo.webp" alt="logo" height="80"
+        width="80" align="center">TopLevel</a>
+    <nav>
+      <ul>
+        <li><a href="produtos.html" class="linkb1">Produtos</a></li>
+        <li><a href="promoções.html" class="linkb1">Promoções</a></li>
+        <li><a href="contato.html" class="linkb1">Contato</a></li>
+        <li><a href="login.html" class="linkb1"> <i class="fa-solid fa-user fa-bounce fa-xs icon"
+              style="color: #ffffffbe;"></i>
+            <div class="login">Login
+          </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="balao-mensagem" id="balao-mensagem">
+    <h1>Não podemos aceitar pedidos online agora</h1>
+    <p1>Contate-nos para finalizar sua compra.</p1>
+  </div>
+
+  <div class="textos5">
+    <h1>CONTROLES</h1>
+  </div>
+
+
+  <div class="container">
+    <aside>
+      <h1>
+        Filtrar por
+        <hr>
+      </h1>
+      <h1>
+        <button class="categories-expand-btn expand-btn" onclick="toggleCategories()">
+          <i class="fas fa-minus"></i>
+        </button>
+        Categorias
+      </h1>
+      <div id="categories" class="categories">
+        <p><a href="produtos.html" class="linkb4">Tudo</a></p>
+        <p><a href="games.html" class="linkb4">Games</a></p>
+        <p><a href="Consoles.html" class="linkb4">Consoles</a></p>
+        <p><a href="controles.html" class="linkb4">Controles</a></p>
+        <p><a href="Acessórios.html" class="linkb4">Acessórios</a></p>
+        <p><a href="Mais vendidos.html" class="linkb4">Mais vendidos</a></p>
+      </div>
+      <hr>
+      <h1>
+        <button class="price-expand-btn expand-btn" onclick="togglePrice()">
+          <i class="fas fa-minus"></i>
+        </button>
+        Preço
+      </h1>
+      <div id="price" class="price-selector">
+        <div class="range-slider">
+          <input type="range" id="minPrice" min="0" max="1000" value="161">
+          <input type="range" id="maxPrice" min="0" max="1000" value="199">
+        </div>
+        <div class="price-labels">
+          <span id="minPriceLabel">R$ 161,99</span>
+          <span id="maxPriceLabel">R$ 199,99</span>
+        </div>
+      </div>
+      <hr>
+    </aside>
+
+    <div class="image-container1-wrapper">
+      <div class="image-container-row">
+        <div class="image-container1">
+
+          <a href="product4.html" class="linkb1">
+            <img src="produtosimg/controles/Flint.webp" alt="Imagem 4">
+          </a>
+          <div class="image-text"><b>Flint</b><br>R$ 149,99</div>
+          <div class="cart-container">
+            <a class="buy-now-bubble" href="login.php">Comprar Agora</a>
+            <a href="login.php" class="cart-icon">
+              <i class="fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="image-container1">
+          <a href="teclado-mecanico-spartan.html" class="linkb1">
+          <span class="promo-tag">Promoção</span>
+            <img src="produtosimg/controles/Ghost.webp" alt="Imagem 2">
+          </a>
+          <div class="image-text"><b>Ghost</b><br><s>R$ 149,99 </s>R$ 134,99</div>
+          <div class="cart-container">
+            <a href="login.php" class="buy-now-bubble">Comprar Agora</a>
+            <a href="login.php" class="cart-icon">
+              <i class="fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="image-container1">
+          <a href="set vr veritas.html" class="linkb1">
+            <img src="produtosimg/controles/Libra 2.0.webp" alt="Imagem 3">
+          </a>
+          <div class="image-text"><b>Libra 2.0</b><br>R$ 149,99</br></br></div>
+          <div class="cart-container">
+            <a href="login.php" class="buy-now-bubble">Comprar Agora</a>
+            <a href="login.php" class="cart-icon">
+              <i class="fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container-row">
+        <div class="image-container1">
+
+          <a href="product4.html" class="linkb1">
+            <span class="promo-tag">Promoção</span>
+            <img src="produtosimg/controles/Raptor.webp" alt="Imagem 4">
+          </a>
+          <div class="image-text"><b>Raptor</b><br><s>R$ 149,99 </s>R$ 134,99</div>
+          <div class="cart-container">
+            <a class="buy-now-bubble" href="login.php">Comprar Agora</a>
+            <a href="login.php" class="cart-icon">
+              <i class="fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="image-container1">
+
+          <a href="product5.html" class="linkb1">
+            
+            <img src="produtosimg/controles/Stealth X.webp" alt="Imagem 5">
+          </a>
+          <div class="image-text"><b>Stealth X</b><br>R$ 149,99</div>
+          <div class="cart-container">
+            <a href="login.php" class="buy-now-bubble">Comprar Agora</a>
+            <a href="login.php" class="cart-icon">
+              <i class="fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="image-container1">
+          <a href="product6.html" class="linkb1">
+            <img src="produtosimg/controles/Wave.webp" alt="Imagem 6">
+          </a>
+          <div class="image-text"><b>Wave</b><br>R$ 149,99</br></div>
+          <div class="cart-container">
+            <a href="login.php" class="buy-now-bubble">Comprar Agora</a>
+            <a href="login.php" class="cart-icon">
+              <i class="fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <footer class="rodape1">
+    <div class="banner1"></div>
+    <div class="container1">
+      <div class="coluna1 rodape1-imagem">
+        <a href="Index.html" class="logo"><img src="Personalização do site/TopLevelLogo.webp" alt="toplevellogo"
+            align="center"></a>
+        <h1>TopLevel</h1>
+      </div>
+      <div class="coluna1">
+        <h3>Produtos</h3>
+        <ul>
+          <a href="games.html" class="linkb1">Games</a><br></br>
+          <a href="Consoles.html" class="linkb1">Consoles</a><br></br>
+          <a href="controles.html" class="linkb1">Controles</a><br></br>
+          <a href="Acessórios.html" class="linkb1">Acessórios</a><br></br>
+        </ul>
+      </div>
+      <div class="coluna1">
+        <h3>Loja</h3>
+        <ul>
+          <p>Rua xxx, 000 - xxxxxxxxxx<br> Guarapuava- PR, 0000-000</br></p>
+          <p>Seg. a Sex.: 9:00 às 20:00<br></br></p>
+          <p>toplevel@gmail.com<br></br></p>
+          <p>(42) 0000-0000<br></br></p>
+        </ul>
+      </div>
+      <div class="coluna1">
+        <h3>Políticas</h3>
+        <ul>
+          <a href="Termos e Condições.html" class="linkb1">Termos e Condições</a><br></br>
+          <a href="Política de Envio.html" class="linkb1">Política de Envio</a><br></br>
+          <a href="Política de Reembolso.html" class="linkb1">Política de Reembolso</a><br></br>
+          <a href="Política de Privacidade.html" class="linkb1">Política de Privacidade</a><br></br>
+          <a href="Política de Cookies.html" class="linkb1">Política de Cookies</a><br></br>
+          <a href="contato.html" class="linkb1">FAQ</a><br></br>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="rodape2">
+    <div class="banner"></div>
+    <div class="container2">
+      <div class="coluna2 rodape2-imagem">
+        <h4>Participe da comunidade</h4>
+        <a href="#" class="logo"><img src="Personalização do site/Facebooklink.webp" alt="fblogo"></a>
+        <a href="#" class="logo"><img src="Personalização do site/instagram-logo.webp" alt="iglogo"></a>
+        <a href="#" class="logo"><img src="Personalização do site/tiktok-logo.webp" alt="ttlogo"></a>
+        <a href="#" class="logo"><img src="Personalização do site/youtube-logo.webp" alt="ytlogo"></a>
+        <ul>
+          <p>© 2023 por TopLevel.<br></p>
+        </ul>
+      </div>
+      <div class="coluna2">
+        <ul>
+          <li>Estimativa de entrega 2 - 5 dias úteis</li>
+        </ul>
+      </div>
+      <div class="coluna2">
+        <h3>Métodos de pagamento</h3>
+        <a class="logo"><img src="Personalização do site/fromadepagamento.webp" alt="pagamento"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<div class="blocos3">
+  <figure>
+      <a href="#" class="linkb1">
+        <img src="produtosimg/controles/Flint.webp" alt="produto1"></a>
+        <br></br>
+          <figcaption style="color: #ccc;"><b>Flint</b><br>R$ 149,99</figcaption>
+        <br></br>
+        <a class="buy-now-button" onclick="exibirBalaoMensagem()">Comprar</a>
+  </figure>
+</div>
+
+<div class="blocos3">
+    <figure>
+        <a href="#" class="linkb1">
+            <img src="produtosimg/controles/Ghost.webp" alt="produto1"></a>
+            <br></br>
+            <figcaption style="color: #ccc;"><b>Ghost</b><br><s>R$ 149,99 </s>R$ 134,99</figcaption>
+          <br></br>
+          <a class="buy-now-button" onclick="exibirBalaoMensagem()">Comprar</a>
+    </figure>
+</div>
+
+      <div class="blocos3">
+        <figure>
+          <a href="#" class="linkb1">
+            <img src="produtosimg/controles/Libra 2.0.webp" alt="produto2"></a>
+            <br></br>
+            <figcaption style="color: #ccc;"><b>Libra 2.0</b><br>R$ 149,99</br></figcaption>
+          <br></br>
+          <a class="buy-now-button" onclick="exibirBalaoMensagem()">Comprar</a>
+        </figure>
+      </div>
+</div>
+<br>
+<div class="container">
+  <aside>
+  </aside>
+  
+  <div class="blocos3">
+    <figure>
+      <a href="#" class="linkb1">
+        <img src="produtosimg/controles/Raptor.webp" alt="produto1"></a>
+          <br></br>
+            <figcaption style="color: #ccc;"><b>Raptor</b><br><s>R$ 149,99 </s>R$ 134,99</figcaption>
+          <br></br>
+          <a class="buy-now-button" onclick="exibirBalaoMensagem()">Comprar</a>
+  </figure>
+  </div>
+  
+  <div class="blocos3">
+    <figure>
+      <a href="#" class="linkb1">
+        <img src="produtosimg/controles/Stealth X.webp" alt="produto1"></a>
+        <br></br>
+        <figcaption style="color: #ccc;"><b>Stealth X</b><br>R$ 149,99</figcaption>
+      <br></br>
+      <a class="buy-now-button" onclick="exibirBalaoMensagem()">Comprar</a>
+    </figure>
+  </div>
+  
+        <div class="blocos3">
+          <figure>
+            <a href="#" class="linkb1">
+                <img src="produtosimg/controles/Wave.webp" alt="produto2"></a>
+                <br></br>
+                <figcaption style="color: #ccc;"><b>Wave</b><br>R$ 149,99</br></figcaption>
+            <br></br>
+            <a class="buy-now-button" onclick="exibirBalaoMensagem()">Comprar</a>
+          </figure>
+        </div>
+  </div>
+  <br>
