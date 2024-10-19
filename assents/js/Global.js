@@ -1,0 +1,81 @@
+let slideIndex = 0;
+let slideInterval;
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    let totalSlides = slides.length;
+
+    if (n >= totalSlides) {
+        slideIndex = 0;
+    }
+    if (n < 0) {
+        slideIndex = totalSlides - 1;
+    }
+
+    let slideWidth = slides[0].offsetWidth;
+    document.querySelector(".slides").style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    if (dots[slideIndex]) {
+        dots[slideIndex].className += " active";
+    }
+}
+
+function plusSlides(n) {
+    slideIndex += n;
+    let slides = document.getElementsByClassName("slide");
+    if (slideIndex >= slides.length) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    showSlides(slideIndex);
+    resetSlideInterval(); 
+}
+
+function currentSlide(n) {
+    slideIndex = n;
+    showSlides(slideIndex);
+    resetSlideInterval(); 
+}
+
+function startSlideInterval() {
+    slideInterval = setInterval(() => {
+        plusSlides(1);
+    }, 3000); 
+}
+
+function resetSlideInterval() {
+    clearInterval(slideInterval);
+    startSlideInterval(); 
+}
+
+function setupDots() {
+    let slides = document.getElementsByClassName("slide");
+    let dotsContainer = document.querySelector(".dots");
+
+    for (let i = 0; i < slides.length; i++) {
+        let dot = document.createElement("span");
+        dot.className = "dot";
+        dot.onclick = () => currentSlide(i);
+        dotsContainer.appendChild(dot);
+    }
+}
+
+showSlides(slideIndex);
+setupDots();
+startSlideInterval();
+
+function exibirBalaoMensagem() {
+    const balaoMensagem = document.getElementById('balao-mensagem');
+    balaoMensagem.style.display = 'block';
+
+    setTimeout(function () {
+        balaoMensagem.style.display = 'none';
+    }, 3000);
+}
+
+
+
+
+

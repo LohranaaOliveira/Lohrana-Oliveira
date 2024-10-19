@@ -1,0 +1,316 @@
+.bemvindo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #9000ff;
+    margin-top: 2%;
+    text-align: center;
+}
+
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 5px;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.cart-container1 {
+    font-size: 1.5rem;
+    color: #9000ff;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.cart-container1:hover {
+    color: hsl(300, 100%, 100%);
+}
+
+.cart-container1 .cart-count1 {
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: bold;
+    
+}
+
+button1 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #9000ff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button1:hover {
+    background-color: #9b00d1;
+}
+
+button2 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button2:hover {
+    color: #dfb1f0;
+}
+
+
+
+
+
+
+
+
+
+#mySidebar {
+    width: 0;     height: 100%;     position: fixed;     top: 0;
+    right: 0;     background-color: black;     overflow-x: hidden;     transition: width 0.5s ease, opacity 0.5s ease;     opacity: 0; }
+
+.sidebar {
+    height: 100vh;     width: 410px;     position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;     z-index: 1000;
+    transition: width 0.5s ease, opacity 0.5s ease;
+    opacity: 1; }
+
+.sidebar h2 {
+    padding-right: 100px;
+}
+
+.sidebar-header {
+    background-color: white;
+    height: 80px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-content {
+    padding: 20px;
+    overflow-y: auto;     flex-grow: 1; }
+
+.flex-spacer {
+    flex-grow: 1; }
+
+.product {
+    display: flex;     align-items: center;     margin-bottom: 20px; }
+
+.product img {
+    width: 110px;     height: auto;     margin-right: 10px; }
+
+.product-details {
+    flex-grow: 1; }
+
+.product-details h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #fff; }
+
+.product-details p {
+    margin: 5px 0;     color: #fff; }
+
+.product-details .price {
+    font-size: 16px;
+    color: #fff; }
+
+.closebtn {
+    margin-right: 100px;
+    border: 0px;
+    background-color: #cccccc00;
+    height: 20px;
+}
+
+
+.subtotal-container {
+    padding: 5px;
+    color: #fff;
+}
+
+.subtotal {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 2;
+}
+
+.subtotal-container hr {
+    border: none;
+    border-top: 1px solid #ccc;     margin: 0;
+    margin-bottom: 25px;
+}
+
+.checkout {
+    background-color: #9b59b6;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin: 0 5%;
+    transition: background-color 0.3s;
+}
+
+.checkout:hover {
+    background-color: #8e44ad;
+}
+
+
+
+
+
+
+
+
+
+
+
+.show {
+    display: block;
+}
+
+.box-search {
+    display: flex;
+    justify-content: center;
+    gap: .1%;
+}
+
+.header-config {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+  }
+
+.header-config img {
+    height: 60px;
+    width: 60px;
+}
+
+
+.quantity-input {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;     border-radius: 5px;     overflow: hidden;     width: 100px;     height: 30px;     text-align: center;     
+}
+
+.quantity-input button {
+    background-color: transparent;
+    border: none;
+    color: #ccc;     font-size: 18px;
+    width: 30px;     height: 100%;     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.quantity-input button:hover {
+    color: #fff; }
+
+.quantity-input input.quantityblock {
+    border: none;     text-align: center;     font-size: 16px;     color: #fff;     background-color: transparent;     outline: none;     appearance: textfield;     background-color: #000000;
+}
+
+.quantity-input input.quantityblock::-webkit-outer-spin-button,
+.quantity-input input.quantityblock::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    background-color: #000000;
+}
+
+
+
+.decrement, .increment {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+input[type="number"] {
+    width: 30px;
+    z-index: 9999;
+    align-items: center;
+    background-color: #000000;
+    border: none;
+    color: #f1f1f1;
+    
+}
+
+
+.quantityblock {
+    width: 70px;
+    height: 0px;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+
+
+.rating {
+    direction: rtl; /* Muda a direção para a direita para a esquerda */
+    display: flex; /* Alinha as estrelas em linha */
+    padding: 5px;
+  }
+  
+  .rating input {
+    display: none; /* Esconde os inputs */
+  }
+  
+  .rating label {
+    font-size: 1.5em; /* Tamanho das estrelas */
+    color: lightgray; /* Cor padrão das estrelas */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+  }
+  
+  .rating input:checked ~ label {
+    color: gold; /* Cor das estrelas selecionadas */
+  }
+  
+  .rating input:checked + label,
+  .rating input:checked + label ~ label {
+    color: gold; /* Muda a cor das estrelas anteriores quando uma é selecionada */
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: gold; /* Cor ao passar o mouse sobre as estrelas */
+  }
+  
+  

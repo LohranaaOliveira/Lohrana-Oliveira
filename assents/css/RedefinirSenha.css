@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  padding: 20px;
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid #000000;
+  box-shadow: 0 1px 80px #0043be;
+  border-radius: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #a5a5a5;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+}
+
+.form-group input[type="text"]:hover,
+.form-group input[type="email"]:hover,
+.form-group input[type="password"]:hover {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+}
+
+.button {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  background-color: #9000ff;
+  color: white;
+  border: 1px solid #9000ff;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button :hover {
+  background-color: #ffffff;
+  border: 1px solid #9000ff;
+  border-radius: 1px;
+  color: #9000ff;
+  text-decoration: none;
+
+}
+
+.close-button a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.textos {
+  position: relative;
+  padding: 10px;
+  margin: 20px;
+  color: white;
+  font-size: 35px;
+  text-align: left;
+}
+
+.linkb1 {
+  font-size: 20px;
+  text-decoration: none;
+  color: #9000ff;
+  ;
+}
+
+.linkb1:hover {
+  font-size: 20px;
+  text-decoration: none;
+  color: #9000ff;
+}
+
+.linkb2 {
+  font-size: 15px;
+  color: #d8d8d8;
+  ;
+}
+
+.linkb2:hover {
+  font-size: 15px;
+  color: #ffffffa1;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #000;
+  }
+
+}
